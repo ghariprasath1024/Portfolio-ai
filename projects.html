@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hari Prasath - Creative Full-Stack Developer & UI/UX Designer. Explore my featured projects and creations.">
+  <meta name="keywords" content="Hari Prasath, Projects, Portfolio, Full-Stack Developer, Web Developer, React, Node.js, HTML, CSS, JavaScript">
+  <meta name="author" content="Hari Prasath">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ghariprasath.netlify.app/projects.html">
+  <meta property="og:title" content="Hari Prasath | Projects & Creations">
+  <meta property="og:description" content="Explore the projects of Hari Prasath, showcasing responsive web design, interactive apps, and full-stack solutions.">
+  <meta property="og:image" content="./assets/project_dashboard.png">
+
+  <title>Hari Prasath | Projects & Creations</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Background Decorative Blobs -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="main-header">
+    <div class="nav-container">
+      <a href="index.html#hero" class="logo" id="nav-logo">
+        <span class="g-text">HARI</span>.DEV
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html#hero" class="nav-link" id="link-hero">Home</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link" id="link-about">About</a></li>
+          <li class="nav-item"><a href="index.html#skills" class="nav-link" id="link-skills">Skills</a></li>
+          <li class="nav-item"><a href="index.html#experience" class="nav-link" id="link-experience">Experience</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link active" id="link-projects">Projects</a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-toggle-btn" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main>
+    <section class="projects-section section-padding" id="projects" style="margin-top: 60px;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Creations</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Card: InternTrack Portal -->
+          <div class="project-card glass-card tilt-card show" data-category="fullstack" id="project-interntrack">
+            <div class="project-image-wrapper">
+              <img src="./assets/1784084636552_cropped.jpg" alt="InternTrack Internship Portal" class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-links">
+                  <a href="https://github.com/ghariprasath1024" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View Source Code"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://github.com/ghariprasath1024" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Full-Stack / Python</span>
+              <h3>InternTrack Portal</h3>
+              <p>A comprehensive internship tracking system enabling students to track applications and submit progress reports, and companies to manage candidate pipelines.</p>
+              <div class="project-tags">
+                <span>Django</span>
+                <span>Python</span>
+                <span>HTML5/CSS3</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: FinAI — AI Finance Management System -->
+          <div class="project-card glass-card tilt-card show" data-category="ai" id="project-finai">
+            <div class="project-image-wrapper">
+              <img src="./assets/finai_dashboard.png" alt="FinAI - Intelligent Finance Manager" class="project-image">
+              <div class="project-overlay">
+                <div class="overlay-links">
+                  <a href="https://github.com/ghariprasath1024" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View Source Code"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-icon-link" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">AI / Finance / Full-Stack</span>
+              <h3>FinAI — Intelligent Finance Manager</h3>
+              <p>An AI-powered personal finance management system with smart budget tracking, real-time spending analytics, category-wise insights, budget vs actual charts, and an AI advisor for financial decisions.</p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>AI Advisor</span>
+                <span>Chart.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html#hero" class="logo"><span class="g-text">HARI</span>.DEV</a>
+        <p>Combining visual polish with clean code architectures.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hari Prasath. All rights reserved. Designed with passion.</p>
+        <button class="back-to-top" id="back-to-top-btn" aria-label="Back to Top" title="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
